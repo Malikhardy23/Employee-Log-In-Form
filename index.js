@@ -73,7 +73,7 @@ form.addEventListener('submit', (e) => {
         formValid = true;
     }
 
-    if(passwordValue === "" || passwordValue.length <= 6){
+    if(passwordValue === "" || passwordValue.length <= 8){
         password.placeholder = "";
         password.style.borderBottom = "2px solid red";
         passwordIcon.style.color = "red";
