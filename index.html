@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Employee Log In</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="memberContainer">
+            <form action="index.html" method="POST" name="myForm" id="myForm">
+                <div class="companyTitleContainer">
+                    <h1>NYC Liberty Tour</h1>
+                </div>
+                <div class="logoContainer">
+                    <h1>Create Your Account</h1>
+                </div>
+                <label for="message" id="message"></label>
+                <div class="user-nameContainer active">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <input type="text" placeholder="Your Name" id="name">
+                </div>
+                <label for="message" id="message"></label>
+                <div class="user-emailContainer">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="text" placeholder="Your e-mail" id="email">
+                </div>
+                <label for="message" id="message"></label>
+                <div class="passwordContainer">
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <input type="text" placeholder="Your password" id="password">
+                    <label for="message" id="message"></label>
+                </div>
+                <small id="small">Password Must Be At Least 8 Characters Long
+                    <br>At Least One Uppercase & Special Character
+                </small>
+                <label for="message" id="message"></label>
+                <div class="passwordCheckContainer">
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <input type="text" placeholder="Re-Enter Password" id="passwordChecker">
+                    <label for="message" id="message"></label>
+
+                </div>
+                <div class="btnContainer">
+                    <button type="submit" id="submitBtn">Register</button>
+                </div>
+                <div class="forgotPasswordContainer">
+                    <a href="#">forgot password?</a>
+                </div>
+                <div class="socialmediaContainer">
+                    <ion-icon name="logo-snapchat"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+            </form>
+        </div>
+        <div class="bannerContainer">
+            <div class="bannerContainerimg"></div>
+        </div>
+    </div>
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+label{
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 25px;
+}
+small{
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+ion-icon{
+    padding: 10px;
+    font-size: 55px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #000;
+    font-size: 1.7rem;
+  }
+
+#container{
+    background-color: #647C9C;
+    color: #000;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 140vh;
+}
+
+#memberContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    text-align: left;
+    margin-top: 30%;
+}
+
+form .success input{
+    border-color: green;
+}
+
+form .error input{
+    border-color: red;
+}
+
+.logoContainer{
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.companyTitleContainer{
+    padding: 10px 10px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+
+.companyTitleContainer h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+
+.user-nameContainer{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+.user-emailContainer{
+    display: flex;
+}
+
+.passwordContainer{
+    display: flex;
+}
+
+.passwordCheckContainer{
+    display: flex;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+}
+
+.btnContainer{
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.btnContainer button{
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.btnContainer button{
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transition: all .4s ease-in-out;
+
+}
+
+.btnContainer button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.bannerContainer .bannerContainerimg{
+    background: url('https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    width: 110vh;
+    height: 140vh;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.forgotPasswordContainer{
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.forgotPasswordContainer a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+
+.forgotPasswordContainer a:hover{
+    color: #fff;
+}
+
+.socialmediaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmediaContainer ion-icon{
+    color: #000;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.socialmediaContainer ion-icon:hover{
+    color: #fff;
+}
+
+
+/* CSS MEDIA QUERIES */ 
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+    #container{
+        background-color: #647C9C;
+        color: #000;
+        width: 165vh;
+        height: 153vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input::placeholder{
+        font-size: 1.5rem;
+    }
+
+    form{
+        height: 100vh;
+    }
+
+    #memberContainer{
+        height: 100vh;
+    }
+
+    .bannerContainer{
+        height: 100vh;
+    }
+
+    .bannerContainer .bannerContainerimg {
+        background: url(https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        width: 91vh;
+        height: 153vh;
+        background-position: center center;
+        background-size: cover;
+    }
+
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    #container{
+        background-color: #647C9C;
+        color: #000;
+        width: 165vh;
+        height: 153vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input::placeholder{
+        font-size: 1.5rem;
+    }
+
+    form{
+        height: 100vh;
+    }
+
+    #memberContainer{
+        height: 100vh;
+    }
+
+    .bannerContainer{
+        height: 100vh;
+    }
+
+    .bannerContainer .bannerContainerimg {
+        background: url(https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        width: 91vh;
+        height: 153vh;
+        background-position: center center;
+        background-size: cover;
+    }
+}
